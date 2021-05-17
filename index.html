@@ -5,10 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="css/loader.css">
     <link rel="stylesheet" href="css/styles.css">
     <title>Osvaldo Valentin</title>
 </head>
 <body>
+    <div class="loader">
+        <h2>This website is still under construction</h2>
+        <span class="loader-icon">
+            <i class='bx bx-loader-alt'></i>
+        </span>
+    </div>
     <header class="sticky-header">
         <nav class="nav-bar">
             <h1>Logo</h1>
@@ -126,9 +133,62 @@
         </section>
         <section class="container" id="services">
             <h2 class="section-title">Services</h2>
+            <p>How I can help you?</p>
+            <article class="cards-container">
+                <div class="card t-center">
+                    <i class='bx bx-code'></i>
+                    <h3>FrontEnd & Backend development</h3>
+                    <p>
+                        I develop your website from the client / user side, to the server side.
+                    </p>
+                </div>
+                <div class="card t-center">
+                    <i class='bx bxs-palette'></i>
+                    <h3>Design UI/UX</h3>
+                    <p>
+                        I’ll be in charge of designing the user interface of your application, making it more attractive, simple and easy to use.
+                    </p>
+                </div>
+                <div class="card t-center">
+                    <i class='bx bxs-data' ></i>
+                    <h3>Database Administrator</h3>
+                    <p>
+                        I'll be responsible for implementing, supporting and managing your organization's or company's database. I'll also ensure that data integrity is maintained.
+                    </p>
+                </div>
+                <div class="card t-center">
+                    <i class='bx bxs-server' ></i>
+                    <h3>Support and infrastructure</h3>
+                    <p>
+                        If you need help with the infrastructure and give support to the users, I can help you. I support servers, printers, computers, etc.
+                    </p>
+                </div>
+            </article>
         </section>
-        <section id="projects"></section>
-        <section id="contact"></section>
+        <section class="container" id="projects">
+            <h2 class="section-title">Projects</h2>
+            <div class="card-carrousel">
+                <div class="project-card">
+                    <img src="" alt="">
+                    <div class="project-card__info">
+                        <h3>Card Title</h3>
+                        <p>
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate molestiae molestias odit commodi unde. Accusantium facilis dolorum quibusdam id perspiciatis error, et iure iste illum nisi officiis, inventore voluptate. Excepturi?
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="container" id="contact">
+            <h2 class="section-title">Contact</h2>
+            <form class="form">
+                <input type="text" placeholder="Full Name">
+                <input type="email" placeholder="Email">
+                <input type="text" placeholder="subject">
+                <textarea name="" id="" cols="30" rows="10"></textarea>
+                <input type="submit" value="Submit" class="btn">
+            </form>
+        </section>
     </main>
     <footer></footer>
     <script src="scripts/index.js" type="module"></script>

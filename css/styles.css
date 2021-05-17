@@ -104,6 +104,9 @@ progress {
     border-radius: 1rem;
     background-color: var(--orange);
     color: var(--light-color);
+    border: none;
+    outline: none;
+    cursor: pointer;
     transition: all .4s ease;
 }
 
@@ -113,7 +116,7 @@ progress {
 
 .section-title {
     width: 100%;
-    margin: 2rem auto 0 auto;
+    margin: 3rem auto 0 auto;
     text-align: center;
     border-bottom: thin solid var(--orange);
     color: var(--orange);
@@ -293,6 +296,41 @@ progress {
     color: var(--light-color);
 }
 
+.cards-container {
+    margin: 1rem 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    gap: 1.5rem;
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 1rem;
+    border-radius: 1rem;
+    background-color: var(--light-color);
+    box-shadow: 0 0 .75rem rgba(0, 0, 0, .25);
+}
+
+.card i {
+    font-size: 3rem;
+    color: var(--light-orange);
+}
+
+.card h3 {
+    color: var(--light-orange);
+}
+
+@media screen and (min-width: 768px) {
+    .cards-container {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+}
+
 @media screen and (min-width: 1024px) {
     .menu {
         width: 50%;
@@ -301,5 +339,10 @@ progress {
     .grid {
         grid-template-columns: repeat(2, 1fr);
         gap: 3rem;
+    }
+
+    .cards-container {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 1fr;
     }
 }
