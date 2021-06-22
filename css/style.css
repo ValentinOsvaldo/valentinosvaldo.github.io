@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
+
+:root {
+    --font: 'Montserrat';
+    --white: #fff;
+    --gray: #A9A9A9;
+    --dark-gray: #222;
+    --black:  #000;
+    --blue-1: #2D8AF9;
+    --blue-2: #0075FF;
+    --blue-3: #004699;
+    --ok: #219653;
+    --danger: #F83232;
+    --warn: #FFFF59;
+}
+
+
+html {
+    box-sizing: border-box;
+    font-family: var(--font);
+    font-size: 16px;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    overflow-x: hidden;
+}
+
+a {
+    color: var(--blue-1);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: .5rem 0;
+}
+
+h1 { font-size: 2rem; }
+h2 { font-size: 1.75rem; }
+h3 { font-size: 1.5rem; }
+h4 { font-size: 1.25rem; }
+h5 { font-size: 1rem; }
+h6 { font-size: .75rem; }
+
+/* Componenets */
+
+.title {
+    font-size: calc(1rem + 1vw);
+    margin: .75rem 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    min-height: 100vh;
+    padding: 1rem;
+}
+
+.d-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.t-center {
+    text-align: center;
+}
+
+.footer-container {
+    background-color: var(--blue-3);
+    color: var(--white);
+    padding: 1rem;
+}
+
+/* Custom CSS */
+
+/* Header */
+
+.header-sticky {
+    position: sticky;
+    top: 0;
+    background-color: var(--dark-gray);
+    color: var(--blue-1);
+}
+
+.nav-bar {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Button */
+
+.menu-btn {
+    display: flex;
+    align-items: center;
+    font-size: 2.25rem;
+    transition: all .4s ease-in-out;
+}
+
+.menu-btn:hover {
+    text-decoration: none;
+    opacity: .75;
+    transform: scale(1.1);
+}
+
+.menu {
+    pointer-events: none;
+    opacity: 0;
+    transition: all .4s ease-in;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: fixed;
+    background-color: var(--blue-2);
+    width: 100%;
+    height: 100vh;
+}
+
+.menu.active {
+    pointer-events: all;
+    opacity: 1;
+}
+
+.menu > a {
+    display: block;
+    text-align: center;
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.25rem;
+    color: var(--white);
+    transition: all .4s ease;
+}
+
+.menu > a:hover {
+    text-decoration: none;
+    opacity: .75;
+    background-color: var(--blue-1);
+}
+
+/*  */
+
+@media screen and (min-width: 1024px) {
+    .menu {
+        transform: translateX(100%);
+        width: 40%;
+        right: 0;
+    }
+
+    .menu.active {
+        transform: translateX(0);
+    }
+}

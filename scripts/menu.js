@@ -1,12 +1,10 @@
-export default function menu(btn, menu) {
-  const BTN = document.querySelector(`${btn} *`),
-    MENU = document.querySelector(menu);
+export default function menu(id) {
+    const menu = document.querySelector(".menu");
 
-  BTN.addEventListener("click", () => MENU.classList.toggle("active"));
-
-  document.addEventListener("click", (e) => {
-    if (e.target !== BTN || e.target.matches(".menu a")) {
-      MENU.classList.remove("active");
-    }
-  });
+    document.addEventListener("click", (e) => {
+        if (e.target.matches(id) || e.target.matches(".menu a")) {
+            e.preventDefault();
+            menu.classList.toggle("active"); // Activando y desactivando el menu
+        }
+    });
 }

@@ -4,198 +4,40 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="css/loader.css">
-    <link rel="stylesheet" href="css/styles.css">
     <title>Osvaldo Valentin</title>
 </head>
 <body>
-    <div class="loader">
-        <h2>This website is still under construction</h2>
-        <span class="loader-icon">
-            <i class='bx bx-loader-alt'></i>
-        </span>
-    </div>
-    <header class="sticky-header">
+    <header class="header-sticky">
         <nav class="nav-bar">
-            <h1>Logo</h1>
-            <span class="menu-btn">
+            <h1 class="title">
+                <a href="index.html">
+                    Osvaldo Valentin
+                </a>
+            </h1>
+            <a href="#" class="menu-btn">
                 <i class='bx bx-menu'></i>
-            </span>
+            </a>
         </nav>
     </header>
     <aside class="menu">
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#services">Services</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
+        <a href="#">Link 1</a>
+        <a href="#">Link 2</a>
+        <a href="#">Link 3</a>
+        <a href="#">Link 4</a>
+        <a href="#">Link 5</a>
     </aside>
-    <main>
-        <section class="hero" id="home">
-            <div class="hero-header">
-                <p>
-                    <span class="font-bold">Hello</span>
-                </p>
-                <p>
-                    <span class="font-bold">My name is</span>
-                </p>
-                <h2 class="title">
-                    Osvaldo Valentin
-                </h2>
-                <p>
-                    <span class="font-bold">And I'm a</span>
-                </p>
-                <h2 class="title">
-                    Software Developer
-                </h2>
-            </div>
-            <div class="hero-body">
-                <p>
-                    More details here
-                </p>
-                <a href="#about" class="btn">Click here</a>
-            </div>
-        </section>
-        <section class="container grid" id="about">
-            <div class="column">
-                <h2 class="section-title">
-                    About me
-                </h2>
-                <div class="t-center">
-                    <p>
-                        Hello, my name is Osvaldo Valentin, I’m an IT engineer and software developer from Monterrey, N.L, México.
-                        <br>
-                        I've been developing on the web for 3 years and I have worked as a support and infrastructure technician for 1 year.
-                    </p>
-                    <p>
-                        I’m a computer technician from <a href="https://www.conalep.edu.mx/" target="_blank" rel="noopener" class="link">CONALEP</a>  and currently studying systems engineering in <a href="https://www.fime.uanl.mx/" target="_blank" rel="noopener" class="link">Facultad de Ingeniería Mecánica y Eletrica (FIME)</a> de la <a href="https://www.uanl.mx/" target="_blank" rel="noopener" class="link">Universidad Autonoma de Nuevo León (UANL)</a>.
-                    </p>
-                    <p>
-                        See my CV for more details about me:
-                    </p>
-                    <a href="assets/pdf/Osvaldo Valentin Garcia.pdf" download="assets/pdf/Osvaldo Valentin Garcia.pdf" class="btn w-90 m-a">Download my CV</a>
-                </div>
-                <div>
-                    <h3 class="t-center link">My social networks</h3>
-                    <div class="row p-1">
-                        <a href="https://www.facebook.com" class="social-btn">
-                            <i class='bx bxl-facebook-circle'></i>
-                        </a>
-                        <a href="" class="social-btn">
-                            <i class='bx bxl-twitter'></i>
-                        </a>
-                        <a href="" class="social-btn">
-                            <i class='bx bxl-instagram' ></i>
-                        </a>
-                        <a href="" class="social-btn">
-                            <i class='bx bxl-linkedin-square' ></i>
-                        </a>
-                        <a href="" class="social-btn">
-                            <i class='bx bxl-youtube' ></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="w-100 h-100">
-                <h2 class="section-title">My Skills</h2>
-                <div class="p-tb-1">
-                    <div class="block">
-                        <label>CSS 90%</label>
-                        <progress class="w-100" value="90" max="100"></progress>
-                    </div>
-                    <div class="block">
-                        <label>Javascript 75%</label>
-                        <progress class="w-100" value="75" max="100"></progress>
-                    </div>
-                    <div class="block">
-                        <label>PHP 50%</label>
-                        <progress class="w-100" value="50" max="100"></progress>
-                    </div>
-                    <div class="block">
-                        <label>Python 50%</label>
-                        <progress class="w-100" value="50" max="100"></progress>
-                    </div>
-                    <div class="block">
-                        <label>SQL 75%</label>
-                        <progress class="w-100" value="75" max="100"></progress>
-                    </div>
-                    <div class="block">
-                        <label>Figma 75%</label>
-                        <progress class="w-100" value="75" max="100"></progress>
-                    </div>
-                    <div class="block">
-                        <label>Adobe XD 75%</label>
-                        <progress class="w-100" value="75" max="100"></progress>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="container" id="services">
-            <h2 class="section-title">Services</h2>
-            <p>How I can help you?</p>
-            <article class="cards-container">
-                <div class="card t-center">
-                    <i class='bx bx-code'></i>
-                    <h3>FrontEnd & Backend development</h3>
-                    <p>
-                        I develop your website from the client / user side, to the server side.
-                    </p>
-                </div>
-                <div class="card t-center">
-                    <i class='bx bxs-palette'></i>
-                    <h3>Design UI/UX</h3>
-                    <p>
-                        I’ll be in charge of designing the user interface of your application, making it more attractive, simple and easy to use.
-                    </p>
-                </div>
-                <div class="card t-center">
-                    <i class='bx bxs-data' ></i>
-                    <h3>Database Administrator</h3>
-                    <p>
-                        I'll be responsible for implementing, supporting and managing your organization's or company's database. I'll also ensure that data integrity is maintained.
-                    </p>
-                </div>
-                <div class="card t-center">
-                    <i class='bx bxs-server' ></i>
-                    <h3>Support and infrastructure</h3>
-                    <p>
-                        If you need help with the infrastructure and give support to the users, I can help you. I support servers, printers, computers, etc.
-                    </p>
-                </div>
-            </article>
-        </section>
-        <section class="container" id="projects">
-            <h2 class="section-title">Projects</h2>
-            <div class="card-carrousel">
-                <div class="project-card">
-                    <img src="assets/img/kasor.jpg" alt="card-img">
-                    <div class="project-card__info">
-                        <h3>Card Title</h3>
-                        <p>
-                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate molestiae molestias odit commodi unde. Accusantium facilis dolorum quibusdam id perspiciatis error, et iure iste illum nisi officiis, inventore voluptate. Excepturi?
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="container" id="contact">
-            <h2 class="section-title">Contact</h2>
-            <form class="form">
-                <input type="text" placeholder="Full Name">
-                <input type="email" placeholder="Email">
-                <input type="text" placeholder="subject">
-                <textarea name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
-                <input type="submit" value="Submit" class="btn">
-            </form>
-        </section>
-    </main>
-    <footer>
-        <nav class="footer-nav">
-            <p>
-                Created by Osvaldo Valentin
-            </p>
-        </nav>
+    <section class="hero container d-flex">
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime dignissimos delectus nobis eos velit, dolor non esse dolorum voluptate ut. Unde vel, perferendis quaerat eius tenetur alias? Fugit, tempore magni?
+        </p>
+    </section>
+    <main></main>
+    <footer class="footer-container d-flex">
+        <p>
+            This is the footer
+        </p>
     </footer>
     <script src="scripts/index.js" type="module"></script>
 </body>
