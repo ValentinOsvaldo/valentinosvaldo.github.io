@@ -52,6 +52,11 @@ h4 { font-size: 1.25rem; }
 h5 { font-size: 1rem; }
 h6 { font-size: .75rem; }
 
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 /* Componenets */
 
 .title {
@@ -67,14 +72,50 @@ h6 { font-size: .75rem; }
     padding: 1rem;
 }
 
+.hero-title {
+    font-size: calc(2rem + 2vw);
+}
+
+.section-title {
+    font-size: calc(2rem + 1vw);
+    color: var(--blue-1);
+    border-bottom: thin solid var(--blue-1);
+}
+
+.fluid-container {
+    width: 70%;
+    max-width: 1000px;
+    min-height: 100vh;
+    margin: auto;
+}
+
 .d-flex {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
 .t-center {
     text-align: center;
+}
+
+.btn {
+    display: block;
+    width: fit-content;
+    padding: 1rem;
+    border-radius: 1rem;
+    transition: all .4s ease-in;
+}
+
+.btn:hover {
+    text-decoration: none;
+    opacity: .75;
+}
+
+.btn.primary {
+    background-color: var(--blue-2);
+    color: var(--white);
 }
 
 .footer-container {
