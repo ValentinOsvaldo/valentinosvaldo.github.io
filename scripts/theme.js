@@ -3,22 +3,36 @@ export default function changeTheme() {
   const darkMode = () => {
     document.body.classList.add("dark-mode");
     localStorage.setItem("theme", "dark");
-    mode.textContent = "Dark";
+    mode.textContent = "Theme: 🌙";
   };
   const ligthMode = () => {
     document.body.classList.remove("dark-mode");
     localStorage.setItem("theme", "light");
-    mode.textContent = "Light";
+    mode.textContent = "Theme: ☀️";
   };
 
   document.addEventListener("click", (e) => {
-    if (e.target.matches(".theme-btn")) {
+    if (e.target.matches(".theme-btn *")) {
       e.preventDefault();
 
-      if (!document.body.classList.contains("dark-mode")) { // Si no se tiene la clase dark-mode al hacer click
-        darkMode();                                         // Ejecutaremos la funcion dark-mode
+      if (!document.body.classList.contains("dark-mode")) {
+        // Si no se tiene la clase dark-mode al hacer click
+        darkMode(); // Ejecutaremos la funcion dark-mode
       } else {
-        ligthMode();                                        // De lo contrario se ejecutara la light mode
+        ligthMode(); // De lo contrario se ejecutara la light mode
+      }
+
+      document.querySelector(".menu").classList.remove("active");
+    }
+
+    if (e.target.matches(".theme-btn")) {
+        e.preventDefault();
+
+      if (!document.body.classList.contains("dark-mode")) {
+        // Si no se tiene la clase dark-mode al hacer click
+        darkMode(); // Ejecutaremos la funcion dark-mode
+      } else {
+        ligthMode(); // De lo contrario se ejecutara la light mode
       }
 
       document.querySelector(".menu").classList.remove("active");

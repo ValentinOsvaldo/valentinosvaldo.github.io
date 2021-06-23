@@ -136,6 +136,10 @@ img {
     padding: 1rem;
 }
 
+.theme-btn {
+    width: max-content !important;
+}
+
 /* Custom CSS */
 
 /* Header */
