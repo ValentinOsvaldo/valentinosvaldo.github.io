@@ -1,0 +1,33 @@
+export default function changeTheme() {
+  const mode = document.getElementById("mode");
+  const darkMode = () => {
+    document.body.classList.add("dark-mode");
+    localStorage.setItem("theme", "dark");
+    mode.textContent = "Dark";
+  };
+  const ligthMode = () => {
+    document.body.classList.remove("dark-mode");
+    localStorage.setItem("theme", "light");
+    mode.textContent = "Light";
+  };
+
+  document.addEventListener("click", (e) => {
+    if (e.target.matches(".theme-btn")) {
+      e.preventDefault();
+
+      if (!document.body.classList.contains("dark-mode")) { // Si no se tiene la clase dark-mode al hacer click
+        darkMode();                                         // Ejecutaremos la funcion dark-mode
+      } else {
+        ligthMode();                                        // De lo contrario se ejecutara la light mode
+      }
+
+      document.querySelector(".menu").classList.remove("active");
+    }
+  });
+
+  if (localStorage.getItem("theme") === null) {
+    return;
+  }
+  if (localStorage.getItem("theme") === "dark") darkMode();
+  if (localStorage.getItem("theme") === "light") ligthMode();
+}
