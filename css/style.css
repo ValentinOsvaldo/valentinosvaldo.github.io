@@ -59,14 +59,22 @@ img {
 
 /* Componenets */
 
+.responsive-font {
+    font-size: calc(1rem + 1vw / 2);
+}
+
 .title {
     font-size: calc(1rem + 1vw);
     margin: .75rem 0;
 }
 
+.title a:hover {
+    text-decoration: none;
+}
+
 .container {
     width: 90%;
-    max-width: 1200px;
+    max-width: 1000px;
     margin: auto;
     min-height: 100vh;
     padding: 1rem;
@@ -80,13 +88,7 @@ img {
     font-size: calc(2rem + 1vw);
     color: var(--blue-1);
     border-bottom: thin solid var(--blue-1);
-}
-
-.fluid-container {
-    width: 70%;
-    max-width: 1000px;
-    min-height: 100vh;
-    margin: auto;
+    text-align: center;
 }
 
 .d-flex {
@@ -193,9 +195,24 @@ img {
     background-color: var(--blue-1);
 }
 
+/* Hero */
+
+.hero {
+    height: 100vh;
+    background-image: url("../assets/img/hero.jpg");
+    background-color: rgba(0, 0, 0, .5);
+    background-blend-mode: darken;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    color: var(--white);
+    padding: 1rem;
+}
+
 /* Media queries */
 
 @media screen and (min-width: 1024px) {
+
     .menu {
         transform: translateX(100%);
         width: 40%;
