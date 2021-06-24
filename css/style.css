@@ -78,6 +78,15 @@ img {
     text-decoration: none;
 }
 
+.list {
+    padding: 0;
+    width: 100%;
+}
+
+.list li {
+    margin-bottom: .5rem;
+}
+
 .container {
     width: 90%;
     max-width: 1000px;
@@ -97,6 +106,14 @@ img {
     text-align: center;
 }
 
+.secondary-title {
+    font-size: calc(1.75rem + 1vw);
+}
+
+.w-100 {
+    width: 100%;
+}
+
 .d-flex {
     display: flex;
     justify-content: center;
@@ -112,9 +129,21 @@ img {
     text-align: justify;
 }
 
+.t-left {
+    text-align: left;
+}
+
+.t-right {
+    text-align: right;
+}
+
+.mb-2{
+    margin-bottom: 2rem;
+}
+
 .btn {
     display: block;
-    width: fit-content;
+    width: 100%;
     padding: 1rem;
     border-radius: 1rem;
     transition: all .4s ease-in;
@@ -223,7 +252,55 @@ img {
     padding: 1rem;
 }
 
+/* Experience Card */
+
+.card-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.experience-card {
+    width: 100%;
+    max-width: 700px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row-reverse;
+    padding: 1rem;
+    border-bottom: thin solid rgba(255, 255, 255, .25);
+    cursor: pointer;
+    transition: all .5s ease;
+}
+
+.experience-card:hover {
+    background-color: rgba(255, 255, 255, .1);
+}
+
+.card-img {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.card-title {
+    font-size: calc(1rem + 1vw);
+    font-weight: bold;
+}
+
 /* Media queries */
+
+@media screen and (min-width: 768px) {
+
+    .btn {
+        width: fit-content;
+    }
+    
+}
 
 @media screen and (min-width: 1024px) {
 
