@@ -38,27 +38,28 @@
     </header>
     <aside class="menu">
         <a href="#about">About</a>
-        <a href="#">Link 2</a>
-        <a href="#">Link 3</a>
-        <a href="#">Link 4</a>
-        <a href="#">Link 5</a>
+        <a href="#projects">Projects</a>
+        <a href="#services">Services</a>
         <a href="#" class="theme-btn" id="mode"></a>
     </aside>
-    <section class="hero d-flex t-center">
-        <h2 class="hero-title">
-            Hello, my name is Osvaldo, and I'm a Software Developer
-        </h2>
-        <p>
-            Welcome to my website
-        </p>
-        <a href="#about" class="btn primary">Click here for more</a>
-    </section>
     <main class="responsive-font">
+        <section class="hero d-flex t-center">
+            <h2 class="hero-title">
+                Hello, my name is Osvaldo, and I'm a Software Developer
+            </h2>
+            <p>
+                Welcome to my website
+            </p>
+            <a href="#about" class="btn primary">Click here for more</a>
+        </section>
         <section class="d-flex container t-center" id="about">
-            <h2 class="section-title">About me</h2>
-            <p class="mb-2">
+            <article id="introduction" class="mb-2">
+                <h2 class="section-title">About me</h2>
+            <p>
                 Hello, my name is Osvaldo, I was born on December 5, 2002 in San Nicolas de los Garza, Nuevo León, México. I have been a software developer for 3 years.
             </p>
+            <a href="assets/pdf/Osvaldo Valentin Garcia.pdf" target="_blank" rel="noopener" download class="btn primary m-auto"><i class="bx bxs-download"></i> Download CV(Spanish)</a>
+            </article>
             <article id="contact" class="w-100 t-left mb-2">
                 <h3 class="secondary-title t-right">Contact</h3>
                 <ul class="list">
@@ -100,13 +101,14 @@
                     <figure class="experience-card">
                         <img src="assets/img/goldenti.jpg" alt="logo" class="card-img">
                         <figcaption>
-                            <span class="card-title">
+                            <p class="card-title">
                                 <a href="http://goldenti.com" target="_blank" rel="noopener noreferrer">Golden Ti</a>
-                            </span>
+                            </p>
+                            <small>
+                                <b>IT technician</b>
+                            </small>
                             <br>
-                            <small>IT technician</small>
-                            <br>
-                            <small><i>Actually</i></small>
+                            <small><i>At Present</i></small>
                         </figcaption>
                     </figure>
                 </aside>
@@ -134,14 +136,50 @@
                     <li>Git / GitHub</li>
                 </ul>
             </article>
+            <article id="philosophy" class="w-100 t-left mb-2">
+                <h3 class="secondary-title t-right">Philosophy</h3>
+                <ul class="list">
+                    <li>
+                        <b>Minimalism</b> <i>(Minimalismo)</i>
+                    </li>
+                    <li>
+                        <b>Resilience</b> <i>(Resiliencia)</i>
+                    </li>
+                    <li>
+                        <b>Autodidact</b> <i>(Autodidacta)</i>
+                    </li>
+                </ul>
+            </article>
+        </section>
+        <section class="d-flex container t-center" id="projects">
+            <h2 class="section-title">Projects</h2>
+            <article class="project-carrousel">
+                <figure class="project-card">
+                    <img src="assets/img/kasor.jpg" alt="kasor">
+                    <figcaption>
+                        <h4 class="card-title">Kasor</h4>
+                        <small class="date">
+                            <i><b>Date:</b> 2020</i>
+                        </small>
+                        <p class="description">
+                            <b>Description:</b>
+                            Kasor DJ/Productor nacido en Monterrey, N.L en 2002, comenzó a componer música por aburrimiento empezó haciendo Beats para subirlos a la página SoundCloud para después meterse al género House se especializa más en el Psy-Trance, Bassline y House.
+                        </p>
+                        <a href="http://valentinosvaldo.github.io/kasor-web-site" target="_blank" rel="noopener noreferrer" class="btn primary m-right">
+                            <small>Look at the project</small>
+                        </a>
+                    </figcaption>
+                </figure>
+            </article>
+        </section>
+        <section class="container t-center" id="services">
+            <h2 class="section-title">Services</h2>
+            <article class="fluid-grid"></article>
         </section>
     </main>
     <footer class="footer-container d-flex">
         <div class="column">
             <h4>Social Networks</h4>
-            <nav class="social-networks">
-                <a href="http://" target="_blank" rel="noopener noreferrer"></a>
-            </nav>
         </div>
     </footer>
     <script src="scripts/index.js" type="module"></script>

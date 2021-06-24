@@ -3,6 +3,7 @@
 :root {
     --font: 'Montserrat';
     --white: #fff;
+    --light-gray: rgb(128, 128, 128, .5);
     --gray: #A9A9A9;
     --dark-gray: #222;
     --black:  #000;
@@ -154,19 +155,36 @@ img {
     opacity: .75;
 }
 
+.m-auto {
+    margin: auto;
+}
+
+.m-right {
+    margin-left: auto;
+}
+
 .btn.primary {
     background-color: var(--blue-2);
     color: var(--white);
 }
 
 .footer-container {
-    background-color: var(--blue-2);
+    background-image: url("../assets/img/hero.jpg");
+    background-color: rgba(0, 0, 0, .5);
+    background-blend-mode: darken;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
     color: var(--white);
     padding: 1rem;
 }
 
 .theme-btn {
     width: max-content !important;
+}
+
+.white {
+    color: var(--white);
 }
 
 /* Custom CSS */
@@ -288,8 +306,36 @@ img {
 }
 
 .card-title {
+    margin: 0;
     font-size: calc(1rem + 1vw);
     font-weight: bold;
+}
+
+/* Project Section */
+
+.project-carrousel {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 500px));
+    gap: 1rem;
+    padding: 1rem 0;
+}
+
+.project-card {
+    margin: 0;
+    background-color: var(--light-gray);
+}
+
+.project-card img {
+    max-width: 100%;
+    object-fit: cover;
+}
+
+.project-card figcaption {
+    padding: 1rem;
+}
+
+.description {
+    font-size: 1rem;
 }
 
 /* Media queries */
