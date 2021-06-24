@@ -271,7 +271,7 @@ img {
     align-items: center;
     flex-direction: row-reverse;
     padding: 1rem;
-    border-bottom: thin solid rgba(255, 255, 255, .25);
+    border-bottom: thin solid var(--gray);
     cursor: pointer;
     transition: all .5s ease;
 }
