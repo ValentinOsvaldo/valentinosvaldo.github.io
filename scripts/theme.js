@@ -25,7 +25,7 @@ export default function changeTheme() {
     }
   });
 
-  if (localStorage.getItem("theme") === null) ligthMode();
+  if (!localStorage.getItem("theme")) ligthMode();
   if (localStorage.getItem("theme") === "dark") darkMode();
   if (localStorage.getItem("theme") === "light") ligthMode();
 }
