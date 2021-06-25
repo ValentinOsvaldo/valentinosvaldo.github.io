@@ -321,7 +321,8 @@ img {
 
 .fluid-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 500px));
+    grid-template-rows: repeat(auto-fit, minmax(240px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
     justify-content: center;
     align-items: center;
     gap: 1rem;
@@ -329,12 +330,20 @@ img {
 }
 
 .project-card {
+    height: 250px;
     position: relative;
     margin: 0;
 }
 
+.project-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 .project-card figcaption {
     position: absolute;
+    padding: 1rem;
     width: 100%;
     height: 99%;
     top: 0;
@@ -353,16 +362,17 @@ img {
 .project-card figcaption a {
     font-size: calc(2rem + 1vw);
     font-weight: bold;
+    text-decoration: none;
     color: var(--white);
     position: relative;
     width: inherit;
     height: inherit;
 }
 
-.project-card figcaption a span {
+/* .project-card figcaption a span {
     position: relative;
     top: 40%;
-}
+} */
 
 /* Media queries */
 
