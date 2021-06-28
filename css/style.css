@@ -321,7 +321,6 @@ img {
 
 .fluid-grid {
     display: grid;
-    grid-template-rows: repeat(auto-fit, minmax(240px, 1fr));
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
     justify-content: center;
     align-items: center;
@@ -360,7 +359,7 @@ img {
 }
 
 .project-card figcaption a {
-    font-size: calc(2rem + 1vw);
+    font-size: calc(2rem + 1vw / 2);
     font-weight: bold;
     text-decoration: none;
     color: var(--white);
@@ -368,11 +367,6 @@ img {
     width: inherit;
     height: inherit;
 }
-
-/* .project-card figcaption a span {
-    position: relative;
-    top: 40%;
-} */
 
 /* Media queries */
 
