@@ -191,6 +191,10 @@ img {
     color: var(--white);
 }
 
+.icon {
+    font-size: calc(2rem + 1vw);
+}
+
 /* Custom CSS */
 
 /* Header */
@@ -366,6 +370,15 @@ img {
     position: relative;
     width: inherit;
     height: inherit;
+}
+
+/* Service Cards */
+
+.service-card {
+    margin: 0;
+    padding: 1rem;
+    border: thin solid var(--light-gray);
+    border-radius: 1rem;
 }
 
 /* Media queries */
