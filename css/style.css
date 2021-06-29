@@ -172,15 +172,41 @@ img {
     color: var(--white);
 }
 
+.no-list {
+    list-style: none;
+    padding: 0;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.row > * {
+    margin: .5rem;
+}
+
 .footer-container {
-    background-image: url("../assets/img/hero.jpg");
-    background-color: rgba(0, 0, 0, .5);
-    background-blend-mode: darken;
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
+    background-color: #111;
     color: var(--white);
-    padding: 1rem;
+    padding: 4rem 1rem;
+}
+
+.responsive-links li a {
+    font-size: calc(2rem + 1vw);
+    color: var(--white);
+    transition: all .4s ease;
+}
+
+.responsive-links li a:hover {
+    opacity: .75;
 }
 
 .theme-btn {
@@ -293,6 +319,7 @@ img {
 .experience-card {
     width: 100%;
     max-width: 700px;
+    margin: 1rem 0;
     text-align: center;
     display: flex;
     justify-content: space-between;
