@@ -419,6 +419,10 @@ img {
     .btn {
         width: fit-content;
     }
+
+    .responsive-font-link {
+        font-size: calc(1rem + 1vw / 2);
+    }
     
 }
 
