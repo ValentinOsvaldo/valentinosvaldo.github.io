@@ -199,6 +199,10 @@ img {
     padding: 4rem 1rem;
 }
 
+.responsive-font-link {
+    font-size: calc(1vw + .75rem);
+}
+
 .responsive-links li a {
     font-size: calc(2rem + 1vw);
     color: var(--white);
