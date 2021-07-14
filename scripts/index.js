@@ -6,6 +6,15 @@ document.addEventListener("DOMContentLoaded", (e) => {
     changeTheme();
 });
 
+// Date
+
+const year = new Date().getFullYear(),
+    $year = document.getElementById("year");
+
+$year.innerHTML = year;
+
+// ScrollReveal
+
 ScrollReveal().reveal('#about', {
     delay: 400,
     duration: 500,
