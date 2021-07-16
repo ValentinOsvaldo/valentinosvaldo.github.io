@@ -418,6 +418,7 @@ img {
 
     .btn {
         width: fit-content;
+        width: -moz-fit-content;
     }
 
     .responsive-font-link {
