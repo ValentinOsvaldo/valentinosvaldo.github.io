@@ -88,6 +88,10 @@ img {
     margin-bottom: .5rem;
 }
 
+.list li > svg {
+    max-width: 50px;
+}
+
 .container {
     width: 90%;
     max-width: 1000px;
