@@ -88,9 +88,15 @@ img {
     margin-bottom: .5rem;
 }
 
-/* .svg {
-    max-width: 100px;
-} */
+.svg {
+    filter: grayscale(1);
+    cursor: pointer;
+    transition: all .4s ease;
+}
+
+.svg:hover {
+    filter: none;
+}
 
 .container {
     width: 90%;
